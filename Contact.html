@@ -6,86 +6,57 @@
   <link rel="stylesheet" href="Contact.css">
 </head>
 <body>
-  <ul class="nav bg-light p-2 justify-content-center">
+  <br>
+  <ul class="nav  p-sm-0 justify-content-lg-between">
     <li><a class="navbar-brand" href="Home.html"><img src="bootstrap/Images/Untitled-2.png" width="60px">
     </a></li>
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+      <a class="nav-link active link-danger" aria-current="page" href="Home.html">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="About.html">About</a>
+      <a class="nav-link active link-danger" aria-current="page" href="About.html">About</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="Services.html">Services</a>
+      <a class="nav-link active link-danger" aria-current="page" href="Services.html">Services</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="Projects.html">Projects</a>
+      <a class="nav-link active link-danger" aria-current="page" href="Projects.html">Projects</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="Contact.html">Contact</a>
+      <a class="nav-link active link-danger" aria-current="page" href="Contact.html">Contact</a>
     </li>
 
  </ul>
- <div class="container-fluid ">
-  <div class=" ">
-    <h1 style="text-align: center;">Delivery Services</h1>
-    <br>
-    <form action="" method="post" >
-        <div class="form-group ">
-            <label for="Firstname">First Name:</label>
-            <input type="text"placeholder="James"> 
-        </div>
-        <br>
-        <div>
-            <label>Second Name:</label>
-            <input type="text"placeholder="Ssemaganda">
-        </div>
-        <br>
-        <div>
-            <label>Email:</label>
-            <input type="text" placeholder="someone@gmail.com">
-        </div>
-        <br>
-        <div>
-            <label>Address:</label>
-            <input type="text"placeholder="Enter Address">
-        </div>
-        <br>
-        <div>
-          <label>Contact:</label>
-          <input type="value"placeholder="0-10">
-      </div>
-        <br>
-        <button class="bg-primary text-light" >Submit</button>
- </div>
-
- 
-
-      <div class="container-fluid">
-
-        <div class="comment-box">
-            <h2>Comment</h2>
-            <form action="submit_comment.php" method="POST">
-                <label for="comment">Comment:</label>
-                <textarea id="comment" name="comment" required></textarea>
-                <input type="submit" value="Add Comment">
-            </form>
-        </div>
-    </div>
-
-    </form>
-
-      <br>
-  <div class="container-fluid">
-    <div class="row">
+ <br>
+ <br>
+ <div class="container">
+  <h2>Contact Us</h2>
+  <form action="#" method="post">
       <div>
-        <div class="col">
-          <div class="p-lg-5 bg-primary text-warning" style="text-align: center;">Footer Navigation</div>
-        </div>
-      </div> 
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
       </div>
-    </div>
-  </div>
+      <div>
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required>
+      </div>
+      <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <div>
+          <input type="submit" value="Submit">
+      </div>
+  </form>
+</div>
+<br>
+<div class="footer">
+  <p>&copy; 2024 Your Website. All Rights Reserved. | Designed by Asizo Fidelis</a></p>
+</div>
   
 
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
