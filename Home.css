@@ -13,7 +13,8 @@
     
 }
 body {
-    background-color: black;
+    background-image: url(bootstrap/Images/creative-italian-food-concept-with-space-middle.jpg);
+    background-color: rgb(252, 244, 244);
     background-position: bottom;
     background-repeat: no-repeat;
 }
