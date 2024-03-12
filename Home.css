@@ -13,8 +13,9 @@
     
 }
 body {
-    background-image: url(bootstrap/Images/sssssssssss.jpg);
-    background-position: 100%;
+    background-color: black;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 .nav {
     background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */

@@ -4,6 +4,59 @@
   <title>Delico's Restaurant </title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="Services.css">
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 100px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+form {
+  padding: 90px;
+}
+
+</style>
+ 
 </head>
 <body>
   <ul class="nav  p-sm-0 justify-content-between ">
@@ -36,45 +89,26 @@
             <img src="bootstrap/Images/menu.jpg" alt="">
         </div>
         <div class="col-lg-6 bg-light-subtle">
-          <h1 style="text-align: center;">Delivery Services</h1>
           <br>
-          <form  class="p-xl-5" method="post">
-              <div class="form-group ">
-                  <label for="Firstname">First Name:</label>
-                  <input type="text"placeholder="James"> 
-              </div>
-              <br>
-              <div>
-                  <label>Second Name:</label>
-                  <input type="text"placeholder="Ssemaganda">
-              </div>
-              <br>
-              <div>
-                  <label>Email:</label>
-                  <input type="text" placeholder="someone@gmail.com">
-              </div>
-              <br>
-              <div>
-                  <label>Address:</label>
-                  <input type="text"placeholder="Enter Address">
-              </div>
-              <br>
-              <div>
-                <label>Contact:</label>
-                <input type="value"placeholder="0-10">
-            </div>
-              <br>
-              <button class="bg-primary text-light" >Submit</button>
-
-              <div class="container-fluid">
-
-                <div class="comment-box">
-                    <h2 style="text-align: center;">Comment</h2>
-                    <form action="submit_comment.php" method="POST">
-                        <label for="comment">Comment:</label>
-                        <textarea id="comment" name="comment" required></textarea>
-                        <input type="submit" value="Add Comment">
-                    </form>
+          <h2>Delivery Services Form</h2>
+          <form action="delivery_form.php" method="POST">
+              <label for="name">Your Name:</label>
+              <input type="text" id="name" name="name" required>
+              
+              <label for="email">Your Email:</label>
+              <input type="email" id="email" name="email" required>
+              
+              <label for="phone">Phone Number:</label>
+              <input type="text" id="phone" name="phone" required>
+              
+              <label for="address">Delivery Address:</label>
+              <textarea id="address" name="address" required></textarea>
+              
+              <label for="instructions">Delivery Instructions:</label>
+              <textarea id="instructions" name="instructions"></textarea>
+              
+              <input type="submit" value="Submit Request">
+          </form>
                 </div>
             </div>
   

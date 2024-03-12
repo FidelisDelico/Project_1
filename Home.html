@@ -4,6 +4,66 @@
   <title>Delico's Restaurant </title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="Home.css">
+  <style>
+    @font-face {
+      font-family: Beauty Ballerina;
+      src: url(bootstrap/Fonts/Beauty_Ballerina.otf);
+    }
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    max-height: 700px; /* Adjust the maximum height as needed */
+    object-fit: cover;
+    margin: auto; /* Center the images horizontally */
+}
+
+.carousel-item {
+    text-align: center; /* Center the images vertically */
+    
+    justify-content: center;
+    align-items: center;
+}
+            
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(39, 33, 33, 0.5); /* Black with 50% opacity */
+    color: rgb(248, 231, 231);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 80%; /* Adjust the width as needed */
+    
+}
+
+.overlay-text h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.overlay-text p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.AA {
+  width: 30%;
+}
+.div, img {
+  border-radius: 10px;
+}
+.text-bg-light {
+  border-radius: 10px;
+}
+
+.carousel-item {
+  transition: transform 2s ease;
+}
+      
+
+</style>
+
 </head>
 <body>
    <ul class="nav p-sm-0  justify-content-between">
@@ -26,15 +86,58 @@
       </li>
 
    </ul>
-        <img src="bootstrap/Images/spaghetti-1932466_1280.jpg"  alt="" class="card-img ">
-        
-          
+
+   <div id="carouselExample" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
+		<center>
+		<div class="carousel-inner ">
+		  <div class="carousel-item active">
+			
+			<img src="bootstrap/Images/Hero Images/beyti-kebab-served-with-ayran-pickles.jpg" alt="GFG"  class="d-block " alt="...">
+		  </div>
+		  <div class="carousel-item">
+		
+			<img src="bootstrap/Images/Hero Images/finely-grilled-local-sac-ichi-food-served-with-lavash-pieces.jpg" alt="GFG" class="d-block  " alt="...">
+		  </div>
+		  <div class="carousel-item">
+
+        <img src="bootstrap/Images/Hero Images/front-view-served-table-with-cocktails.jpg" alt="GFG" class="d-block  " alt="...">
+		  </div>
+		  <div class="carousel-item">
+
+        <img src="bootstrap/Images/Hero Images/top-view-crispy-fried-meat-slices-served-with-vegetable-salad.jpg" alt="GFG" class="d-block  " alt="...">
+		  </div>
+		  <div class="carousel-item">
+
+        <img src="bootstrap/Images/Hero Images/various-salads-made-from-mashed-vegetables.jpg" alt="GFG" class="d-block  " alt="...">
+		  </div>
+		  <div class="carousel-item">
+	
+			<img src="bootstrap/Images/Hero Images/turkish-stuffed-eggplants-with-ground-beef-vegetables-baked-with-tomato-sauce.jpg" alt="GFG"  class="d-block " alt="...">
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="visually-hidden">Next</span>
+		</button>
+		</center>
+	  </div>      
       </div>
+
+      <div class="overlay-text">
+        <H1 class="display-3">Welcome To</H1>
+        <img class="AA"   src="bootstrap/Images/Untitled-2.png" alt="">
+
+      </div>
+
 
   <div class="container-xxl">
   
     <div class="row">
-      <h1 class=" display-4 align-content-center text-light" style="text-align: center;">Our Menu</h1>
+      <h1 class=" display-4 align-content-center text-light text-bg-danger" style="text-align: center;">Our Menu</h1>
       <div class="col-2">
         <br>
         <img src="bootstrap/Images/hot-dog-5337929_1280.jpg" alt="" class="img-fluid">

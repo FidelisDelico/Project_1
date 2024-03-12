@@ -81,11 +81,13 @@ body {
     padding: 10px 0;
   }
   .banner {
-    background-color: #f9f9f9;
+    background-color: #0f0e0e;
     padding: 100px;
     text-align: center;
+
   }
   
   .banner h1 {
-    margin: 0;
+    margin: 5%;
   }
+  
