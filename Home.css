@@ -28,7 +28,7 @@ body {
 }
 
 .nav a {
-    float: left;
+    float: right; 
     display: block;
     color: #fff;
     text-align: center;

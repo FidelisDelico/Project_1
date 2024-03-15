@@ -59,26 +59,9 @@ form {
  
 </head>
 <body>
-  <ul class="nav  p-sm-0 justify-content-between ">
-    <li><a class="navbar-brand" href="Home.html"><img src="bootstrap/Images/Untitled-2.png" width="60px">
-    </a></li>
-    <li class="nav-item">
-      <a class="nav-link active link-danger" aria-current="page" href="Home.html">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active link-danger" aria-current="page" href="About.html">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active link-danger" aria-current="page" href="Services.html">Services</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active link-danger" aria-current="page" href="Projects.html">Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active link-danger" aria-current="page" href="Contact.html">Contact</a>
-    </li>
 
- </ul>
+<?php include_once('nav.html') ?>
+
  <br>
  <body>
   
