@@ -66,9 +66,10 @@
 </main>
 
 <!-- Footer Section -->
-<footer>
-  <p>&copy; 2024 Your Restaurant Name. All rights reserved.</p>
-</footer>
+<footer class="bg-dark p-3">
+  <p class="text-light text-align-center">2024 Delico's. All Rights Reserved. | Designed by Asizo Fidelis</p>
+ </footer>
+ 
 <script type="Text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -30,7 +30,7 @@ p {
     bottom: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
-    color: #fff;
+    color: #080808;
     text-align: center;
     padding: 20px 0;
 }
@@ -40,7 +40,7 @@ p {
 }
 
 .footer a {
-    color: #fff;
+    color: #0a0a0a;
     text-decoration: none;
 }
 

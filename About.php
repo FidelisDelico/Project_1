@@ -111,12 +111,10 @@
     </form>
 </div>
 
- 
-      <br>
   
-      <div class="footer">
-        <p>&copy; 2024 Your Website. All Rights Reserved. | Designed by Asizo Fidelis</a></p>
-      </div>
+<footer class="bg-dark p-3">
+  <p class="text-light text-align-center">2024 Delico's. All Rights Reserved. | Designed by Asizo Fidelis</p>
+ </footer>
       
   </div> 
   

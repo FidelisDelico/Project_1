@@ -199,9 +199,9 @@
 </div>
 
 
-  <div class="footer">
-    <p>&copy; 2024 Your Website. All Rights Reserved. | Designed by Asizo Fidelis</a></p>
-  </div>
+ <footer class="p-3">
+  <p class="text-light">2024 Delico's. All Rights Reserved. | Designed by Asizo Fidelis</p>
+ </footer>
   
 
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
