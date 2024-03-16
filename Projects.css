@@ -35,9 +35,9 @@ body {
 }
 
 .nav a {
-    float: left;
+    float: right; 
     display: block;
-    color: #fff;
+    color: #090909;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -47,6 +47,7 @@ body {
 .nav a:hover {
     background-color: #ddd;
     color: #000;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
 }
   
   /* Main Content Styles */

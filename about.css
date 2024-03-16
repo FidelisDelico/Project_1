@@ -11,9 +11,9 @@ p {
 }
 
 .nav a {
-    float: left;
+    float: right; 
     display: block;
-    color: #fff;
+    color: #fffdfd;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -22,7 +22,8 @@ p {
 
 .nav a:hover {
     background-color: #ddd;
-    color: #000;
+    color: #f5f0f0;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
 }
 .footer {
     position: fixed;
