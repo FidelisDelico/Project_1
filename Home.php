@@ -124,32 +124,32 @@
       <h1 class=" display-4 align-content-center text-danger bg-light-subtle" style="text-align: center;">Our Menu</h1>
       <div class="col-2">
         <br>
-        <img src="bootstrap/Images/hot-dog-5337929_1280.jpg" alt="" class="img-fluid">
+        <img src="Images/hot-dog-5337929_1280.jpg" alt="" class="img-fluid">
         <p class="text-bg-light">Hot Dog</p>
       </div>
       <div class="col-2">
         <br>
-        <img src="bootstrap/Images/grilled-chicken-1334632_1280.jpg" alt="" class="img-fluid">
+        <img src="Images/grilled-chicken-1334632_1280.jpg" alt="" class="img-fluid">
         <p class="text-bg-light">Grilled Chicken</p>
       </div>
       <div class="col-2">
         <br>
-        <img src="bootstrap/Images/cappuccino-756490_1280.jpg" alt="" class="img-fluid">
+        <img src="Images/cappuccino-756490_1280.jpg" alt="" class="img-fluid">
         <p class="text-bg-light">Cappuccino</p>
       </div>
       <div class="col-2">
         <br>
-        <img src="bootstrap/Images/beans-799533_1280.jpg" alt="" class="img-fluid">
+        <img src="Images/beans-799533_1280.jpg" alt="" class="img-fluid">
         <p class="text-bg-light">English Breakfast</p>
       </div>
       <div class="col-2">
         <br>
-        <img src="bootstrap/Images/pizza-3010062_1280.jpg" alt="" class="img-fluid">
+        <img src="Images/pizza-3010062_1280.jpg" alt="" class="img-fluid">
         <p class="text-bg-light">Pizza</p>
       </div>
       <div class="col-2">
         <br>
-        <img src="bootstrap/Images/asparagus-2169305_1280.jpg" alt="" class="img-fluid">
+        <img src="Images/asparagus-2169305_1280.jpg" alt="" class="img-fluid">
         <p class="text-bg-light">Steak</p>
       </div>
 

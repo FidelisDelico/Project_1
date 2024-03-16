@@ -27,37 +27,37 @@
   <section class="projects">
 
     <div class="project">
-      <img src="bootstrap/Images/mid-section-male-chef-holding-prepared-beef-steak-with-vegetables.jpg" alt="Project 2">
+      <img src="Images/mid-section-male-chef-holding-prepared-beef-steak-with-vegetables.jpg" alt="Project 2">
       <h3>Chef's Special Beef Steak</h3>
       <p>Chef's Special Beef Steak Served with grilled vegitables.</p>
     </div>
 
     <div class="project">
-      <img src="bootstrap/Images/vegitables.jpg" alt="Project 1">
+      <img src="Images/vegitables.jpg" alt="Project 1">
       <h3>Farm-to-Table Experience</h3>
       <p>Explore our commitment to using locally sourced ingredients.</p>
     </div>
 
     <div class="project">
-      <img src="bootstrap/Images/adam-bartoszewicz-KoAV43S5ok8-unsplash.jpg" alt="Project 2">
+      <img src="Images/adam-bartoszewicz-KoAV43S5ok8-unsplash.jpg" alt="Project 2">
       <h3>Chef's Special Events</h3>
       <p>Discover our exclusive dining experiences hosted by our top chefs.</p>
     </div>
 
     <div class="project">
-      <img src="bootstrap/Images/low-angle-man-holding-plate-drink.jpg" alt="Project 2">
+      <img src="Images/low-angle-man-holding-plate-drink.jpg" alt="Project 2">
       <h3>Community Outreach Programmes </h3>
       <p>Experience our outreach programmes with Specials from amazing chefs.</p>
     </div>
 
     <div class="project">
-      <img src="bootstrap/Images/happy-family-funny-kids-are-preparing-fresh-vegetable-salad-kitchen.jpg" alt="Project 2">
+      <img src="Images/happy-family-funny-kids-are-preparing-fresh-vegetable-salad-kitchen.jpg" alt="Project 2">
       <h3>Chef Children</h3>
       <p>Creating a generation of young and talented chefs.</p>
     </div>
 
     <div class="project">
-      <img src="bootstrap/Images/multiethnic-male-cooks-standing-restaurant-professional-kitchen-with-arms-crossed-while-preparing-ingredients-dish-culinary-experts-wearing-chef-hats-while-standing-near-cooking-station.jpg" alt="Project 2">
+      <img src="Images/multiethnic-male-cooks-standing-restaurant-professional-kitchen-with-arms-crossed-while-preparing-ingredients-dish-culinary-experts-wearing-chef-hats-while-standing-near-cooking-station.jpg" alt="Project 2">
       <h3>Annual Chef Competition</h3>
       <p>Come be part of our Annual Amazing Chef Competitions.</p>
     </div>
