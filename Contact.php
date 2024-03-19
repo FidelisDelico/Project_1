@@ -6,12 +6,10 @@
   <link rel="stylesheet" href="Contact.css">
 </head>
 <body>
-  <br>
   
-  <?php include_once('nav.html') ?>
+<?php include_once('nav.html') ?>
 
- <br>
- <br>
+ 
  <div class="container">
   <h2 style="color: aliceblue; background-color: black;">Contact Us</h2>
   <form action="#" method="post">
@@ -36,11 +34,10 @@
       </div>
   </form>
 </div>
-
-
-<footer class="p-3 bg-dark">
-  <p class="text-light">2024 Delico's. All Rights Reserved. | Designed by Asizo Fidelis</p>
- </footer>
+<br>
+<footer class="bg-dark-subtle p-3">
+  <p>&copy; 2024 Your Restaurant Name. All rights reserved.</p>
+</footer>
   
 
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>

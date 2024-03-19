@@ -59,17 +59,14 @@ form {
  
 </head>
 <body>
-
 <?php include_once('nav.html') ?>
-
- <br>
  <body>
   
   <div class="container-lg">
     <div class="row">
         <div class="column">
-            <h2>Column 1</h2>
-            <img src="bootstrap/Images/menu.jpg" alt="">
+            <h2>.............</h2>
+            <img src="Images/menu.jpg" alt="">
         </div>
         <div class="col-lg-6 bg-light-subtle">
           <br>
@@ -101,9 +98,9 @@ form {
 </div>
 <br>
 
-<footer class="bg-dark p-3">
-  <p class="text-light text-align-center">2024 Delico's. All Rights Reserved. | Designed by Asizo Fidelis</p>
- </footer>
+<footer class="text-dark bg-dark-subtle p-3">
+  <p>&copy; 2024 Your Restaurant Name. All rights reserved.</p>
+</footer>
   
 
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>

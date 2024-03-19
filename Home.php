@@ -68,35 +68,34 @@
 </head>
 <body>
   
-  <?php include_once('nav.html') ?>
-   
+<?php include_once('nav.html') ?>
 
    <div id="carouselExample" class="carousel slide" data-bs-interval="5000" data-bs-ride="carousel">
 		<center>
 		<div class="carousel-inner ">
 		  <div class="carousel-item active">
 			
-			<img src="bootstrap/Images/Hero Images/beyti-kebab-served-with-ayran-pickles.jpg" alt="GFG"  class="d-block " alt="...">
+			<img src="Images/Hero Images/beyti-kebab-served-with-ayran-pickles.jpg" alt="GFG"  class="d-block " alt="...">
 		  </div>
 		  <div class="carousel-item">
 		
-			<img src="bootstrap/Images/Hero Images/finely-grilled-local-sac-ichi-food-served-with-lavash-pieces.jpg" alt="GFG" class="d-block  " alt="...">
+			<img src="Images/Hero Images/finely-grilled-local-sac-ichi-food-served-with-lavash-pieces.jpg" alt="GFG" class="d-block  " alt="...">
 		  </div>
 		  <div class="carousel-item">
 
-        <img src="bootstrap/Images/Hero Images/front-view-served-table-with-cocktails.jpg" alt="GFG" class="d-block  " alt="...">
+        <img src="Images/Hero Images/front-view-served-table-with-cocktails.jpg" alt="GFG" class="d-block  " alt="...">
 		  </div>
 		  <div class="carousel-item">
 
-        <img src="bootstrap/Images/Hero Images/top-view-crispy-fried-meat-slices-served-with-vegetable-salad.jpg" alt="GFG" class="d-block  " alt="...">
+        <img src="Images/Hero Images/top-view-crispy-fried-meat-slices-served-with-vegetable-salad.jpg" alt="GFG" class="d-block  " alt="...">
 		  </div>
 		  <div class="carousel-item">
 
-        <img src="bootstrap/Images/Hero Images/various-salads-made-from-mashed-vegetables.jpg" alt="GFG" class="d-block  " alt="...">
+        <img src="Images/Hero Images/various-salads-made-from-mashed-vegetables.jpg" alt="GFG" class="d-block  " alt="...">
 		  </div>
 		  <div class="carousel-item">
 	
-			<img src="bootstrap/Images/Hero Images/turkish-stuffed-eggplants-with-ground-beef-vegetables-baked-with-tomato-sauce.jpg" alt="GFG"  class="d-block " alt="...">
+			<img src="Images/Hero Images/turkish-stuffed-eggplants-with-ground-beef-vegetables-baked-with-tomato-sauce.jpg" alt="GFG"  class="d-block " alt="...">
 		  </div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -113,7 +112,7 @@
 
       <div class="overlay-text">
         <H1 class="display-3">Welcome To</H1>
-        <img class="AA"   src="bootstrap/Images/Untitled-2.png" alt="">
+        <img class="AA"   src="Images/Untitled-2.png" alt="">
 
       </div>
 
@@ -165,15 +164,15 @@
 
     <div class="row justify-content-center">
       <div class="col-md-3">
-        <img src="bootstrap/Images/rolex-rolled-eggs.jpg" alt="" class="img-fluid">
+        <img src="Images/rolex-rolled-eggs.jpg" alt="" class="img-fluid">
         <p class="text-bg-light text-center">Rolex</p>
       </div>
       <div class="col-md-3">
-        <img src="bootstrap/Images/pasta-dish-restaurant-table.jpg" alt="" class="img-fluid">
+        <img src="Images/pasta-dish-restaurant-table.jpg" alt="" class="img-fluid">
         <p class="text-bg-light text-center">lasagna</p>
       </div>
       <div class="col-md-3">
-        <img src="bootstrap/Images/side-view-pilaf-with-stewed-beef-meat-plate.jpg" alt="" class="img-fluid">
+        <img src="Images/side-view-pilaf-with-stewed-beef-meat-plate.jpg" alt="" class="img-fluid">
         <p class="text-bg-light text-center">Beef Pilau</p>
       </div>
     </div>
@@ -199,9 +198,9 @@
 </div>
 
 
- <footer class="p-3">
-  <p class="text-light">2024 Delico's. All Rights Reserved. | Designed by Asizo Fidelis</p>
- </footer>
+<footer class="text-light"
+  <p>&copy; 2024 Your Restaurant Name. All rights reserved.</p>
+</footer>
   
 
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>

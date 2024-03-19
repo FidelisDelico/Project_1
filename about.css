@@ -11,9 +11,9 @@ p {
 }
 
 .nav a {
-    float: right; 
+    float: left;
     display: block;
-    color: #fffdfd;
+    color: #fff;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -22,8 +22,7 @@ p {
 
 .nav a:hover {
     background-color: #ddd;
-    color: #f5f0f0;
-    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    color: #000;
 }
 .footer {
     position: fixed;
@@ -31,7 +30,7 @@ p {
     bottom: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8); /* Transparent black background */
-    color: #080808;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
 }
@@ -41,7 +40,7 @@ p {
 }
 
 .footer a {
-    color: #0a0a0a;
+    color: #fff;
     text-decoration: none;
 }
 

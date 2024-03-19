@@ -32,7 +32,7 @@
 </head>
 <body class="bg-light-subtle">
   
-      <?php include_once('nav.html') ?>
+<?php include_once('nav.html') ?>
 
   <div class="container-fluid">
     <div class="row">
@@ -45,7 +45,7 @@
             Nestled in the heart of Ntinda, our restaurant is more than just a dining 
             destination; it's a celebration of flavors, traditions, and heartfelt hospitality.</p>
         </div>
-        <img src="bootstrap/Images/turkish-stuffed-eggplants-with-ground-beef-vegetables-baked-with-tomato-sauce.jpg" class="img-fluid"> 
+        <img src="Images/turkish-stuffed-eggplants-with-ground-beef-vegetables-baked-with-tomato-sauce.jpg" class="img-fluid"> 
 
       </div>
       
@@ -111,10 +111,12 @@
     </form>
 </div>
 
+ 
+      <br>
   
-<footer class="bg-dark p-3">
-  <p class="text-light text-align-center">2024 Delico's. All Rights Reserved. | Designed by Asizo Fidelis</p>
- </footer>
+<footer class="bg-dark-subtle p-3">
+  <p>&copy; 2024 Your Restaurant Name. All rights reserved.</p>
+</footer>
       
   </div> 
   
