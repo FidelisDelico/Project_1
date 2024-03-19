@@ -60,6 +60,8 @@ form {
 </head>
 <body>
 <?php include_once('nav.html') ?>
+
+
  <body>
   
   <div class="container-lg">
@@ -71,7 +73,7 @@ form {
         <div class="col-lg-6 bg-light-subtle">
           <br>
           <h2>Delivery Services Form</h2>
-          <form action="delivery_form.php" method="POST">
+          <form action="dbdelivery_form.php" method="POST">
               <label for="name">Your Name:</label>
               <input type="text" id="name" name="name" required>
               
@@ -93,6 +95,7 @@ form {
             </div>
   
             </form>
+            
       </div>
     </div>
 </div>
