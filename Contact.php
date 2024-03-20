@@ -12,7 +12,7 @@
  
  <div class="container">
   <h2 style="color: aliceblue; background-color: black;">Contact Us</h2>
-  <form action="#" method="post">
+  <form action="dbcontact_form.php" method="POST">
       <div>
           <label for="name">Your Name:</label>
           <input type="text" id="name" name="name" required>
