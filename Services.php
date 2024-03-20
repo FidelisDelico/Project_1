@@ -73,7 +73,7 @@ form {
         <div class="col-lg-6 bg-light-subtle">
           <br>
           <h2>Delivery Services Form</h2>
-          <form action="dbdelivery_form.php" method="POST">
+          <form action="dbdelivery_connect.php" method="POST">
               <label for="name">Your Name:</label>
               <input type="text" id="name" name="name" required>
               
