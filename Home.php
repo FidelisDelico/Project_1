@@ -88,31 +88,31 @@
       background-color: #343a40; 
       color: #ffc107; 
     }
-.navbar {
-background-color: rgba(52, 58, 64, 0.7);
+    .navbar {
+    background-color: rgba(0, 0, 0, 0); 
 }
 
 .navbar-brand img {
-width: 60px;
+    width: 60px;
 }
 
 .navbar-nav {
-margin-right: auto; 
+    margin-left: auto; 
 }
 
 .nav-item {
-margin-right: 15px; 
+    margin-right: 15px; 
 }
 
 .nav-link {
-color: #fff !important; 
-transition: background-color 0.3s; 
+    color: #fff !important; 
+    transition: background-color 0.3s; 
 }
 
 .nav-link:hover,
 .nav-link.active {
-background-color: #ffc107; 
-color: #343a40 !important; 
+    background-color: #ffc107; 
+    color: #343a40 !important; 
 }
 
   </style>
