@@ -66,7 +66,7 @@
       <tr>
         <th>Image</th>
         <th>Dish</th>
-        <th>Description</th>
+        <th></th>
         <th>Price</th>
         <th>Order</th>
       </tr>
@@ -108,7 +108,7 @@
         <thead>
           <tr>
             <th>Drink</th>
-            <th>Description</th>
+            <th></th>
             <th>Price</th>
             <th>Order</th>
           </tr>
@@ -147,7 +147,7 @@
         <thead>
           <tr>
             <th>Drink</th>
-            <th>Description</th>
+            <th></th>
             <th>Price</th>
             <th>Order</th>
           </tr>

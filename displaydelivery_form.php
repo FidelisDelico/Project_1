@@ -9,26 +9,26 @@
     <style>
         .edit-button,
 .delete-button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; 
     border: none;
     color: white;
-    padding: 8px 16px; /* Reduced padding */
+    padding: 8px 16px; 
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px; /* Reduced font size */
-    margin-right: 8px; /* Reduced margin */
+    font-size: 14px; 
+    margin-right: 8px; 
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s; /* Smooth transition effect */
+    transition: background-color 0.3s; 
 }
 
 .edit-button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049;  
 }
 
 .delete-button:hover {
-    background-color: #d32f2f; /* Darker red on hover */
+    background-color: #d32f2f; 
 }
 
     </style>
