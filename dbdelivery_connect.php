@@ -10,7 +10,7 @@ if ($stmt = mysqli_prepare($connect, $query)) {
 
 
     if (mysqli_stmt_execute($stmt)) {
-        echo "Data inserted successfully.";
+        header("Location:displaydelivery_form.php");
     } else {
         die("Execute failed: " . mysqli_error($connect));
     }

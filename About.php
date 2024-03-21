@@ -28,6 +28,44 @@
     font-size: 18px;
 }
 
+.navbar {
+  background-color: black; 
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.navbar-nav {
+    margin-left: auto; 
+}
+
+.nav-item {
+    margin-right: 15px; 
+}
+
+.nav-link {
+    color: #fff !important; 
+    transition: background-color 0.3s; 
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #ffc107; 
+    color: #343a40 !important; 
+}
+footer {
+      background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+      color: #fff; /* White text color */
+      text-align: center; /* Center align the text */
+      padding: 20px 0; /* Add padding for better readability */
+      
+      bottom: 0; /* Align at the bottom */
+      width: 100%; /* Full width */
+      z-index: 9999; /* Ensure it appears on top of other content */
+    }
+
+
   </style>
 </head>
 <body class="bg-light-subtle">
@@ -48,11 +86,12 @@
         <img src="Images/turkish-stuffed-eggplants-with-ground-beef-vegetables-baked-with-tomato-sauce.jpg" class="img-fluid"> 
 
       </div>
+      <br>
       
     <div class="row">
       <div class="col-lg-6">
         <p style="text-align: center;" class="display-5" >Our Team</p>
-        <div class="p-5 bg-light-subtle text-dark display-10 text-center">Behind every delicious dish and memorable dining experience
+        <div class="p-5">Behind every delicious dish and memorable dining experience
           is our dedicated team of chefs, servers, and staff. With a shared passion for hospitality and a 
           relentless pursuit of excellence, we strive to exceed your expectations with every visit. 
           From the kitchen to the dining room, we work tirelessly to ensure that your time with us is 
@@ -85,6 +124,7 @@
             Whether it's through supporting local farmers and producers, participating in charitable 
             events, or fostering meaningful connections with our neighbors, we are proud to be an 
             integral part of the vibrant tapestry of Ntinda.
+            <a href="" class="read-more">Read more</a>
           </div>
         </div>
         
@@ -112,13 +152,9 @@
 </div>
 
  
-      <br>
-  
-<footer class="bg-dark-subtle p-3">
-  <p>&copy; 2024 Your Restaurant Name. All rights reserved.</p>
+<footer>
+  <p>&copy; 2024 Delico's Restaurant. All rights reserved.</p>
 </footer>
-      
-  </div> 
   
 
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>

@@ -61,6 +61,32 @@
   transition: transform 2s ease;
 }
 
+footer {
+      background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+      color: #fff; /* White text color */
+      text-align: center; /* Center align the text */
+      padding: 20px 0; /* Add padding for better readability */
+      
+      bottom: 0; /* Align at the bottom */
+      width: 100%; /* Full width */
+      z-index: 9999; /* Ensure it appears on top of other content */
+    }
+    .text-bg-light-button {
+  background-color: #ffc107; /* Yellow background color */
+  color: #343a40; /* Dark text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px 16px; /* Adjusted padding for better fit */
+  font-size: 14px; /* Adjusted font size */
+  cursor: pointer; /* Cursor style on hover */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition effects */
+}
+
+.text-bg-light-button:hover {
+  background-color: #343a40; /* Change background color on hover */
+  color: #ffc107; /* Change text color on hover */
+}
+
       
 
 </style>
@@ -117,78 +143,123 @@
       </div>
 
 
-  <div class="container-xxl">
-  
-    <div class="row">
-      <h1 class=" display-4 align-content-center text-danger bg-light-subtle" style="text-align: center;">Our Menu</h1>
-      <div class="col-2">
-        <br>
-        <img src="Images/hot-dog-5337929_1280.jpg" alt="" class="img-fluid">
-        <p class="text-bg-light">Hot Dog</p>
-      </div>
-      <div class="col-2">
-        <br>
-        <img src="Images/grilled-chicken-1334632_1280.jpg" alt="" class="img-fluid">
-        <p class="text-bg-light">Grilled Chicken</p>
-      </div>
-      <div class="col-2">
-        <br>
-        <img src="Images/cappuccino-756490_1280.jpg" alt="" class="img-fluid">
-        <p class="text-bg-light">Cappuccino</p>
-      </div>
-      <div class="col-2">
-        <br>
-        <img src="Images/beans-799533_1280.jpg" alt="" class="img-fluid">
-        <p class="text-bg-light">English Breakfast</p>
-      </div>
-      <div class="col-2">
-        <br>
-        <img src="Images/pizza-3010062_1280.jpg" alt="" class="img-fluid">
-        <p class="text-bg-light">Pizza</p>
-      </div>
-      <div class="col-2">
-        <br>
-        <img src="Images/asparagus-2169305_1280.jpg" alt="" class="img-fluid">
-        <p class="text-bg-light">Steak</p>
-      </div>
+      <div class="container-xxl">
+  <div class="row">
+    <h1 class="align-content-center text-light bg-warning" style="text-align: center;">OUR MENU</h1>
 
-    </div>
-  </div>
-
-    </div>
-  </div>
-
-  
-
-  <div class="container-fluid">
-
-    <div class="row justify-content-center">
-      <div class="col-md-3">
-        <img src="Images/rolex-rolled-eggs.jpg" alt="" class="img-fluid">
-        <p class="text-bg-light text-center">Rolex</p>
-      </div>
-      <div class="col-md-3">
-        <img src="Images/pasta-dish-restaurant-table.jpg" alt="" class="img-fluid">
-        <p class="text-bg-light text-center">lasagna</p>
-      </div>
-      <div class="col-md-3">
-        <img src="Images/side-view-pilaf-with-stewed-beef-meat-plate.jpg" alt="" class="img-fluid">
-        <p class="text-bg-light text-center">Beef Pilau</p>
-      </div>
-    </div>
-  </div>
+    <div class="col-2">
       <br>
-  <div class="container-fluid">
-    <div class="row">
-      <div>
-        <div class="col">
-          <div class="p-lg-5  text-warning" style="text-align: center;"></div>
-        </div>
-      </div> 
+      <img src="Images/menu images/french fries.JPG" alt="" class="img-fluid">
+      <button class="text-bg-light-button" onclick="toggleInfo('FrenchFries')">French Fries</button>
+      
+      <div id="FrenchFries-info" style="display: none;"> <!-- Updated ID -->
+        <p class="text-light">Potatoes, vegetable oil for frying, salt.</p>
+        <h6 class="text-warning">UGX:7,000</h6>
+        <a href="Services.php">
+          <button onclick="orderNow('French Fries')" class="text-bg-light-button">Order Now</button>
+        </a>
       </div>
     </div>
-  </div>
 
+    
+    
+    <div class="col-2">
+      <br>
+      <img src="Images/menu images/fried chicken.JPG" alt="" class="img-fluid">
+      <button class="text-bg-light-button" onclick="toggleInfo('FriedChicken')">Fried Chicken</button>
+      
+      <div id="FriedChicken-info" style="display: none;"> 
+        <p class="text-light"> Chicken pieces (such as wings, thighs, or drumsticks), flour, 
+          seasoning (such as salt, pepper, paprika), vegetable oil for frying.</p>
+          <h6 class="text-warning">UGX:25,000</h6>
+        <a href="Services.php">
+          <button onclick="orderNow('Fried Chicken')" class="text-bg-light-button">Order Now</button>
+        </a>
+      </div>
+    </div>
+   
+    <div class="col-2">
+      <br>
+      <img src="Images/menu images/hot-dog.JPG" alt="" class="img-fluid">
+      <button class="text-bg-light-button" onclick="toggleInfo('HotDog')">HotDog</button>
+      
+      <div id="HotDog-info" style="display: none;"> <!-- Updated ID -->
+        <p class="text-light">Hot dog sausage, hot dog bun, mustard, ketchup, onions, relish, sauerkraut.</p>
+        <h6 class="text-warning">UGX:10,000</h6>
+        <a href="Services.php">
+          <button onclick="orderNow('Hot Dog')" class="text-bg-light-button">Order Now</button>
+        </a>
+      </div>
+    </div>
+    <div class="col-2">
+      <br>
+      <img src="Images/menu images/pizza2.JPG" alt="" class="img-fluid">
+      <button class="text-bg-light-button" onclick="toggleInfo('pizza2')">Pizza</button>
+      
+      <div id="pizza2-info" style="display: none;"> 
+        <p class="text-light">Pizza dough, tomato sauce, mozzarella cheese, pepperoni, 
+          mushrooms, onions, olives, bell peppers.</p>
+          <h6 class="text-warning">UGX:15,000</h6>
+        <a href="Services.php">
+          <button onclick="orderNow('pizza2')" class="text-bg-light-button">Order Now</button>
+        </a>
+      </div>
+    </div>
+    <div class="col-2">
+      <br>
+      <img src="Images/menu images/tacos.JPG" alt="" class="img-fluid">
+      <button class="text-bg-light-button" onclick="toggleInfo('tacos')">Tacos</button>
+      
+      <div id="tacos-info" style="display: none;"> 
+        <p class="text-light"> Corn or wheat tortillas, seasoned meat (beef, chicken, pork), lettuce, 
+          cheese, salsa, sour cream.</p>
+          <h6 class="text-warning">UGX:10,000</h6>
+        <a href="Services.php">
+          <button onclick="orderNow('tacos')" class="text-bg-light-button">Order Now</button>
+        </a>
+      </div>
+    </div>
+    <div class="col-2">
+      <br>
+      <img src="Images/menu images/Hamburger.JPG" alt="" class="img-fluid">
+      <button class="text-bg-light-button" onclick="toggleInfo('Hamburger')">Hamburger</button>
+    
+      <div id="Hamburger-info" style="display: none;"> <!-- Updated ID -->
+        <p class="text-light">Beef patty, hamburger bun, lettuce, tomato, onion, pickles, 
+          cheese, ketchup, mustard.</p>
+          <H6 class="text-warning">UGX:20,000</H6>
+        <a href="Services.php">
+          <button onclick="orderNow('Hamburger')" class="text-bg-light-button">Order Now</button>
+        </a>
+      </div>
+    </div>
+   
+</div>
+
+<div class="text-center mt-4">
+  <a href="Menu.php"> <button class="text-bg-light-button">Explore Our Menu</button></a> 
+ 
+</div>
+
+<script>
+  function toggleInfo(menuItem) {
+    var info = document.getElementById(menuItem + "-info");
+    if (info.style.display === "none") {
+      info.style.display = "block";
+    } else {
+      info.style.display = "none";
+    }
+  }
+
+  function orderNow(menuItem) {
+    // Redirect to the services page for ordering
+    window.location.href = "services.html";
+    // Optionally, you can pass the menu item as a query parameter to pre-fill the order form
+    // window.location.href = "services.html?item=" + encodeURIComponent(menuItem);
+  }
+</script>
+
+      <br>
   <div class="content">
     <div class="long-row bg-light-subtle text-center p-lg-5">
       <h1>Our Mission</h1>
@@ -198,8 +269,8 @@
 </div>
 
 
-<footer class="text-light"
-  <p>&copy; 2024 Your Restaurant Name. All rights reserved.</p>
+<footer>
+  <p>&copy; 2024 Delico's Restaurant. All rights reserved.</p>
 </footer>
   
 

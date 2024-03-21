@@ -55,6 +55,45 @@ form {
   padding: 90px;
 }
 
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.navbar-nav {
+    margin-left: auto; 
+}
+
+.nav-item {
+    margin-right: 15px; 
+}
+
+.nav-link {
+    color: #fff !important; 
+    transition: background-color 0.3s; 
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #ffc107; 
+    color: #343a40 !important; 
+}
+
+footer {
+      background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+      color: #fff; /* White text color */
+      text-align: center; /* Center align the text */
+      padding: 20px 0; /* Add padding for better readability */
+      
+      bottom: 0; /* Align at the bottom */
+      width: 100%; /* Full width */
+      z-index: 9999; /* Ensure it appears on top of other content */
+    }
+
+
 </style>
  
 </head>
@@ -101,8 +140,8 @@ form {
 </div>
 <br>
 
-<footer class="text-dark bg-dark-subtle p-3">
-  <p>&copy; 2024 Your Restaurant Name. All rights reserved.</p>
+<footer>
+  <p>&copy; 2024 Delico's Restaurant. All rights reserved.</p>
 </footer>
   
 

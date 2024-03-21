@@ -9,7 +9,7 @@ if ($stmt = mysqli_prepare($connect, $query)) {
     $_POST["subject"], $_POST["message"]);
 
     if (mysqli_stmt_execute($stmt)) {
-        echo "Data inserted successfully.";
+        header("Location:displaycontactform.php");
     } else {
         die("Execute failed: " . mysqli_error($connect));
     }

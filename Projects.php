@@ -5,9 +5,48 @@
   <title>Delico's Restaurant</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="Projects.css">
+<style>
+ .navbar {
+  display: flex;
+  justify-content: center; /* Center align horizontally */
+  align-items: center; /* Center align vertically */
+  background-color: rgba(52, 58, 64, 0.7);
+}
 
+.navbar-brand img {
+  width: 60px;
+}
 
+.navbar-nav {
+  display: flex; /* Use flexbox for better alignment */
+}
 
+.nav-item {
+  margin-right: 15px; 
+}
+
+.nav-link {
+  color: #fff !important; 
+  transition: background-color 0.3s; 
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #ffc107; 
+  color: #343a40 !important; 
+}
+
+footer {
+      background-color: smokewhite; /* Transparent black background */
+      color: #fff; /* White text color */
+      text-align: center; /* Center align the text */
+      padding: 20px 0; /* Add padding for better readability */
+      
+      bottom: 0; /* Align at the bottom */
+      width: 100%; /* Full width */
+      z-index: 9999; /* Ensure it appears on top of other content */
+    }
+</style>
 </head>
 <body>
 
@@ -64,10 +103,10 @@
   </section>
 </main>
 
-<!-- Footer Section -->
 <footer>
-  <p>&copy; 2024 Your Restaurant Name. All rights reserved.</p>
+  <p>&copy; 2024 Delico's Restaurant. All rights reserved.</p>
 </footer>
+
 <script type="Text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
