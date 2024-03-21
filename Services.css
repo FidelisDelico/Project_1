@@ -15,7 +15,7 @@ padding: 20px;
 }
 .column {
 float: left;
-width: 50%; /* Adjust the width as per your layout */
+width: 50%; 
 padding: 10px;
 box-sizing: border-box;
 }

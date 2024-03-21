@@ -56,7 +56,7 @@ form {
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(52, 58, 64, 0.7);
 }
 
 .navbar-brand img {
@@ -81,16 +81,15 @@ form {
     background-color: #ffc107; 
     color: #343a40 !important; 
 }
-
 footer {
-      background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
-      color: #fff; /* White text color */
-      text-align: center; /* Center align the text */
-      padding: 20px 0; /* Add padding for better readability */
+      background-color: rgba(0, 0, 0, 0.7); 
+      color: #fff; 
+      text-align: center; 
+      padding: 20px 0; 
       
-      bottom: 0; /* Align at the bottom */
-      width: 100%; /* Full width */
-      z-index: 9999; /* Ensure it appears on top of other content */
+      bottom: 0; 
+      width: 100%; 
+      z-index: 9999; 
     }
 
 

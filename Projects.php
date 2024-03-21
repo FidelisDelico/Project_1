@@ -1,112 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-  <title>Delico's Restaurant</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delico's Projects</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="Projects.css">
-<style>
- .navbar {
-  display: flex;
-  justify-content: center; /* Center align horizontally */
-  align-items: center; /* Center align vertically */
-  background-color: rgba(52, 58, 64, 0.7);
+  <style>
+    body {
+    background-color: whitesmoke;
+}
+    .hero-image {
+      background-image: url('Images/creative-italian-food-concept-with-space-middle.JPG');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .projects-heading {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .card {
+      margin-bottom: 30px;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .read-more {
+      display: none;
+    }
+
+    .card:hover .read-more {
+      display: block;
+    }
+    .navbar {
+    background-color: black;
 }
 
 .navbar-brand img {
-  width: 60px;
+    width: 60px;
 }
 
 .navbar-nav {
-  display: flex; /* Use flexbox for better alignment */
+    margin-left: auto; 
 }
 
 .nav-item {
-  margin-right: 15px; 
+    margin-right: 15px; 
 }
 
 .nav-link {
-  color: #fff !important; 
-  transition: background-color 0.3s; 
+    color: #fff !important; 
+    transition: background-color 0.3s; 
 }
 
 .nav-link:hover,
 .nav-link.active {
-  background-color: #ffc107; 
-  color: #343a40 !important; 
+    background-color: #ffc107; 
+    color: #343a40 !important; 
 }
-
-footer {
-      background-color: smokewhite; /* Transparent black background */
-      color: #fff; /* White text color */
-      text-align: center; /* Center align the text */
-      padding: 20px 0; /* Add padding for better readability */
-      
-      bottom: 0; /* Align at the bottom */
-      width: 100%; /* Full width */
-      z-index: 9999; /* Ensure it appears on top of other content */
-    }
-</style>
+  </style>
 </head>
 <body>
 
 <?php include_once('nav.html') ?>
-
-<section class="banner">
-  <h1 class="display-3  p-4" style="border-radius: 10px; background-color: rgba(233, 241, 120, 0.58);">Welcome to Delico's</h1>
-  <p style="color: aliceblue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; border-radius: 5px;"
   
-   class="display-6 text-bg-dark">Discover our latest projects and culinary creations.</p>
-</section>
-
-<!-- Main Content Section -->
-<main class="container">
-  <h1 style="text-align: center; border-radius: 5px;" class="display-4 text-bg-dark">Our Projects</h1>
-  <section class="projects">
-
-    <div class="project">
-      <img src="Images/mid-section-male-chef-holding-prepared-beef-steak-with-vegetables.jpg" alt="Project 2">
-      <h3>Chef's Special Beef Steak</h3>
-      <p>Chef's Special Beef Steak Served with grilled vegitables.</p>
-    </div>
-
-    <div class="project">
-      <img src="Images/vegitables.jpg" alt="Project 1">
-      <h3>Farm-to-Table Experience</h3>
-      <p>Explore our commitment to using locally sourced ingredients.</p>
-    </div>
-
-    <div class="project">
-      <img src="Images/adam-bartoszewicz-KoAV43S5ok8-unsplash.jpg" alt="Project 2">
-      <h3>Chef's Special Events</h3>
-      <p>Discover our exclusive dining experiences hosted by our top chefs.</p>
-    </div>
-
-    <div class="project">
-      <img src="Images/low-angle-man-holding-plate-drink.jpg" alt="Project 2">
-      <h3>Community Outreach Programmes </h3>
-      <p>Experience our outreach programmes with Specials from amazing chefs.</p>
-    </div>
-
-    <div class="project">
-      <img src="Images/happy-family-funny-kids-are-preparing-fresh-vegetable-salad-kitchen.jpg" alt="Project 2">
-      <h3>Chef Children</h3>
-      <p>Creating a generation of young and talented chefs.</p>
-    </div>
-
-    <div class="project">
-      <img src="Images/multiethnic-male-cooks-standing-restaurant-professional-kitchen-with-arms-crossed-while-preparing-ingredients-dish-culinary-experts-wearing-chef-hats-while-standing-near-cooking-station.jpg" alt="Project 2">
-      <h3>Annual Chef Competition</h3>
-      <p>Come be part of our Annual Amazing Chef Competitions.</p>
-    </div>
   
-  </section>
-</main>
+  <div class="hero-image">
+    <h1>Welcome to Delico's Projects</h1>
+  </div>
 
-<footer>
-  <p>&copy; 2024 Delico's Restaurant. All rights reserved.</p>
-</footer>
+  
+  <div class="container">
+    <h1 class="projects-heading bg-warning text-light">PROJECTS</h1>
+    <div class="row">
+    
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Images/vegitables.JPG" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Farm-to-Table Initiative</h5>
+            <p class="card-text">A farm-to-table initiative emphasizes sourcing fresh, locally sourced 
+              ingredients directly from farmers and producers to use in your restaurant's menu offerings.</p>
+            <button class="btn btn-primary read-more" data-toggle="collapse" data-target="#project1-info">Read More</button>
+            <div id="project1-info" class="collapse">
+              <p>This project involves establishing partnerships with local farmers, artisans, 
+              and suppliers to procure high-quality, seasonal ingredients that reflect the region's 
+              culinary bounty. By embracing a farm-to-table approach, you support local agriculture, 
+              promote sustainability, and offer customers a unique dining experience centered on fresh, 
+              flavorful ingredients with traceable origins.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Images/hunger-relief-disabled-individuals.JPG" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Chef Community Outreach</h5>
+            <p class="card-text">Community outreach initiatives involve actively engaging with local communities through sponsorships, partnerships, or participation in events and activities.</p>
+            <button class="btn btn-primary read-more" data-toggle="collapse" data-target="#project2-info">Read More</button>
+            <div id="project2-info" class="collapse">
+              <p>This project may include sponsoring local sports teams, participating in charity fundraisers, 
+                or hosting community events such as food drives or neighborhood clean-up efforts. 
+                By demonstrating your restaurant's commitment to community involvement and social 
+                responsibility, you strengthen ties with residents, increase brand awareness, and 
+                foster positive word-of-mouth referrals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="Images/impatient-pizza-delivery-driver-poses-fast-motorbike.JPG" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Food Delivery Service</h5>
+            <p class="card-text">A food delivery service enables customers to enjoy your restaurant's cuisine from the comfort of their homes or offices by offering delivery options for your menu items.</p>
+            <button class="btn btn-primary read-more" data-toggle="collapse" data-target="#project3-info">Read More</button>
+            <div id="project3-info" class="collapse">
+              <p>This project may involve partnering with third-party delivery platforms, such as Uber Eats or 
+                DoorDash, or establishing an in-house delivery operation with dedicated drivers. Offering food 
+                delivery expands your customer reach, taps into the growing demand for off-premise dining 
+                options, and provides an additional revenue stream for your restaurant.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<script type="Text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <footer>
+    <p>&copy; 2024 Delico's Restaurant. All rights reserved.</p>
+  </footer>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

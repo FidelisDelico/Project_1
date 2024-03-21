@@ -9,19 +9,19 @@
 
   <style>
 .order-btn {
-    background-color: #ffc107; /* Yellow background color */
-    color: #343a40; /* Dark text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 8px 16px; /* Adjusted padding for better fit */
-    font-size: 14px; /* Adjusted font size */
-    cursor: pointer; /* Cursor style on hover */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition effects */
+    background-color: #ffc107; 
+    color: #343a40; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 8px 16px; 
+    font-size: 14px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s; 
   }
   
   .order-btn:hover {
-    background-color: #343a40; /* Change background color on hover */
-    color: #ffc107; /* Change text color on hover */
+    background-color: #343a40; 
+    color: #ffc107; 
   }
   .navbar {
     background-color: rgba(52, 58, 64, 0.7);
@@ -195,6 +195,10 @@
   </table>
   
 </div>
+
+<footer>
+    <p>&copy; 2024 Delico's Restaurant. All rights reserved.</p>
+</footer>
 
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>

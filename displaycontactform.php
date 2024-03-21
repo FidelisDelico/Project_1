@@ -16,18 +16,16 @@
         <?php
         require_once("dbconnect_contact.php");
 
-        // Check connection
+      
         if ($connect->connect_error) {
             die("Connection failed: " . $connect->connect_error);
         }
 
-        // SQL query to retrieve data from your table
         $sql = "SELECT id, name, email, subject, message FROM contact_form";
         $result = $connect->query($sql);
 
-        // Check if there are rows returned
         if ($result->num_rows > 0) {
-            // Output data of each row
+          
             echo "<table>
                     <tr>
                         <th>ID</th>
@@ -50,10 +48,14 @@
             echo "0 results";
         }
 
-        // Close connection
+     
         $connect->close();
         ?>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Delico's Restaurant. All rights reserved.</p>
+    </footer>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

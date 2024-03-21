@@ -9,87 +9,113 @@
       font-family: Beauty Ballerina;
       src: url(bootstrap/Fonts/Beauty_Ballerina.otf);
     }
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-    max-height: 700px; /* Adjust the maximum height as needed */
-    object-fit: cover;
-    margin: auto; /* Center the images horizontally */
-}
-
-.carousel-item {
-    text-align: center; /* Center the images vertically */
     
-    justify-content: center;
-    align-items: center;
-}
-            
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(39, 33, 33, 0.5); /* Black with 50% opacity */
-    color: rgb(248, 231, 231);
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    width: 80%; /* Adjust the width as needed */
-    
-}
-
-.overlay-text h2 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.overlay-text p {
-    margin: 10px 0;
-    font-size: 18px;
-}
-.AA {
-  width: 30%;
-}
-.div, img {
-  border-radius: 10px;
-}
-.text-bg-light {
-  border-radius: 10px;
-}
-
-.carousel-item {
-  transition: transform 2s ease;
-}
-
-footer {
-      background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
-      color: #fff; /* White text color */
-      text-align: center; /* Center align the text */
-      padding: 20px 0; /* Add padding for better readability */
-      
-      bottom: 0; /* Align at the bottom */
-      width: 100%; /* Full width */
-      z-index: 9999; /* Ensure it appears on top of other content */
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+      max-height: 700px;
+      object-fit: cover;
+      margin: auto; 
     }
+
+    .carousel-item {
+      text-align: center; 
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .overlay-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(39, 33, 33, 0.5); 
+      color: rgb(248, 231, 231);
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      width: 80%; 
+    }
+
+    .overlay-text h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .overlay-text p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .AA {
+      width: 30%;
+    }
+
+    .div, img {
+      border-radius: 10px;
+    }
+
+    .text-bg-light {
+      border-radius: 10px;
+    }
+
+    .carousel-item {
+      transition: transform 2s ease;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.7); 
+      color: #fff; 
+      text-align: center; 
+      padding: 20px 0; 
+      bottom: 0; 
+      width: 100%; 
+      z-index: 9999; 
+    }
+
     .text-bg-light-button {
-  background-color: #ffc107; /* Yellow background color */
-  color: #343a40; /* Dark text color */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  padding: 8px 16px; /* Adjusted padding for better fit */
-  font-size: 14px; /* Adjusted font size */
-  cursor: pointer; /* Cursor style on hover */
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition effects */
+      background-color: #ffc107; 
+      color: #343a40; 
+      border: none;
+      border-radius: 5px; 
+      padding: 8px 16px; 
+      font-size: 14px; 
+      cursor: pointer; 
+      transition: background-color 0.3s, color 0.3s; 
+    }
+
+    .text-bg-light-button:hover {
+      background-color: #343a40; 
+      color: #ffc107; 
+    }
+.navbar {
+background-color: rgba(52, 58, 64, 0.7);
 }
 
-.text-bg-light-button:hover {
-  background-color: #343a40; /* Change background color on hover */
-  color: #ffc107; /* Change text color on hover */
+.navbar-brand img {
+width: 60px;
 }
 
-      
+.navbar-nav {
+margin-right: auto; 
+}
 
-</style>
+.nav-item {
+margin-right: 15px; 
+}
+
+.nav-link {
+color: #fff !important; 
+transition: background-color 0.3s; 
+}
+
+.nav-link:hover,
+.nav-link.active {
+background-color: #ffc107; 
+color: #343a40 !important; 
+}
+
+  </style>
 
 </head>
 <body>
@@ -152,7 +178,7 @@ footer {
       <img src="Images/menu images/french fries.JPG" alt="" class="img-fluid">
       <button class="text-bg-light-button" onclick="toggleInfo('FrenchFries')">French Fries</button>
       
-      <div id="FrenchFries-info" style="display: none;"> <!-- Updated ID -->
+      <div id="FrenchFries-info" style="display: none;"> 
         <p class="text-light">Potatoes, vegetable oil for frying, salt.</p>
         <h6 class="text-warning">UGX:7,000</h6>
         <a href="Services.php">
@@ -183,7 +209,7 @@ footer {
       <img src="Images/menu images/hot-dog.JPG" alt="" class="img-fluid">
       <button class="text-bg-light-button" onclick="toggleInfo('HotDog')">HotDog</button>
       
-      <div id="HotDog-info" style="display: none;"> <!-- Updated ID -->
+      <div id="HotDog-info" style="display: none;"> 
         <p class="text-light">Hot dog sausage, hot dog bun, mustard, ketchup, onions, relish, sauerkraut.</p>
         <h6 class="text-warning">UGX:10,000</h6>
         <a href="Services.php">
@@ -224,7 +250,7 @@ footer {
       <img src="Images/menu images/Hamburger.JPG" alt="" class="img-fluid">
       <button class="text-bg-light-button" onclick="toggleInfo('Hamburger')">Hamburger</button>
     
-      <div id="Hamburger-info" style="display: none;"> <!-- Updated ID -->
+      <div id="Hamburger-info" style="display: none;"> 
         <p class="text-light">Beef patty, hamburger bun, lettuce, tomato, onion, pickles, 
           cheese, ketchup, mustard.</p>
           <H6 class="text-warning">UGX:20,000</H6>
@@ -252,10 +278,7 @@ footer {
   }
 
   function orderNow(menuItem) {
-    // Redirect to the services page for ordering
     window.location.href = "services.html";
-    // Optionally, you can pass the menu item as a query parameter to pre-fill the order form
-    // window.location.href = "services.html?item=" + encodeURIComponent(menuItem);
   }
 </script>
 
