@@ -1,0 +1,83 @@
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(Images/impatient-pizza-delivery-driver-poses-fast-motorbike.jpg);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    }
+    
+    .container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    
+    }
+    
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    text-align: start;
+    
+    
+    }
+    
+    th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: start;
+    }
+    
+    th {
+    background-color: #343a40;
+    color: #fff;
+    }
+    
+    tr:hover {
+    background-color: #f2f2f2;
+    }
+    h1 {
+    border-radius: 5px;
+    }
+    
+    .navbar {
+        background-color: rgba(52, 58, 64, 0.7);
+    }
+    
+    .navbar-brand img {
+        width: 60px;
+    }
+    
+    .navbar-nav {
+        margin-left: auto; 
+    }
+    
+    .nav-item {
+        margin-right: 15px; 
+    }
+    
+    .nav-link {
+        color: #fff !important; 
+        transition: background-color 0.3s; 
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        background-color: #ffc107; 
+        color: #343a40 !important; 
+    }
+    footer {
+        background-color: rgba(0, 0, 0, 0.7); 
+        color: #fff; 
+        text-align: center; 
+        padding: 20px 0; 
+        bottom: 0; 
+        width: 100%; 
+        z-index: 9999; 
+      }
+      

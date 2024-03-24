@@ -8,38 +8,64 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <style>
         .edit-button,
-.delete-button {
-    background-color: #4CAF50; 
-    border: none;
-    color: white;
-    padding: 8px 16px; 
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px; 
-    margin-right: 8px; 
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s; 
-}
+        .delete-button {
+            background-color: #4CAF50; 
+            border: none;
+            color: white;
+            padding: 8px 16px; 
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px; 
+            margin-right: 8px; 
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s; 
+        }
 
-.edit-button:hover {
-    background-color: #45a049;  
-}
+        .edit-button:hover {
+            background-color: #45a049;  
+        }
 
-.delete-button:hover {
-    background-color: #d32f2f; 
-}
-
+        .delete-button:hover {
+            background-color: #d32f2f; 
+        }
     </style>
 </head>
 <body>
-
-    <?php include_once('nav.html');
+    <?php 
+    include_once('nav.html');
     require_once("dbdelivery_form.php");
 
     if ($connect->connect_error) {
         die("Connection failed: " . $connect->connect_error);
+    }
+
+    if (isset($_POST['edit'])) {
+        $id = $_POST['id'];
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $address = $_POST['address'];
+        $instructions = $_POST['instructions'];
+
+        $sql = "UPDATE user_info SET name='$name', email='$email', phone='$phone', address='$address', instructions='$instructions' WHERE id='$id'";
+        if ($connect->query($sql) === TRUE) {
+            
+        } else {
+            echo "Error updating record: " . $connect->error;
+        }
+    }
+
+    if (isset($_GET['delete'])) {
+        $id = $_GET['delete'];
+
+        $sql = "DELETE FROM user_info WHERE id='$id'";
+        if ($connect->query($sql) === TRUE) {
+           
+        } else {
+            echo "Error deleting record: " . $connect->error;
+        }
     }
 
     $sql = "SELECT id, name, email, phone, address, instructions FROM user_info";
@@ -67,8 +93,16 @@
                     <td>" . $row["address"] . "</td>
                     <td>" . $row["instructions"] . "</td>
                     <td>
-                        <button class='edit-button' onclick='editRow(this)'>Edit</button>
-                        <button class='delete-button' onclick='deleteRow(this)'>Delete</button>
+                        <form method='POST' action='edit_entry.php'>
+                            <input type='hidden' name='id' value='" . $row["id"] . "'>
+                            <input type='hidden' name='name' value='" . $row["name"] . "'>
+                            <input type='hidden' name='email' value='" . $row["email"] . "'>
+                            <input type='hidden' name='phone' value='" . $row["phone"] . "'>
+                            <input type='hidden' name='address' value='" . $row["address"] . "'>
+                            <input type='hidden' name='instructions' value='" . $row["instructions"] . "'>
+                            <button class='edit-button' type='submit' name='edit'>Edit</button>
+                        </form>
+                        <a href='?delete=" . $row["id"] . "' class='delete-button'>Delete</a>
                     </td>
                   </tr>";
         }
@@ -87,26 +121,5 @@
         <p>&copy; 2024 Delico's Restaurant. All rights reserved.</p>
     </footer>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-    <script>
-        function editRow(button) {
-            var row = button.parentNode.parentNode;
-            var cells = row.getElementsByTagName("td");
-            for (var i = 1; i < cells.length - 1; i++) {
-                var value = cells[i].innerText;
-                var newValue = prompt("Enter new value for " + cells[i].previousElementSibling.innerText + ":", value);
-                if (newValue !== null) {
-                    cells[i].innerText = newValue;
-                }
-            }
-        }
-
-        function deleteRow(button) {
-            var confirmation = confirm("Are you sure you want to delete this entry?");
-            if (confirmation) {
-                var row = button.parentNode.parentNode;
-                row.parentNode.removeChild(row);
-            }
-        }
-    </script>
 </body>
 </html>
