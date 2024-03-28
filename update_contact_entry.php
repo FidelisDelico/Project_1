@@ -12,7 +12,7 @@ if(isset($_POST['edit'])) {
     $subject = $_POST['subject'];
     $message = $_POST['message'];
 
-    // Update the entry in the database
+    
     $sql = "UPDATE contact_form SET name=?, email=?, subject=?, message=? WHERE id=?";
     $stmt = $connect->prepare($sql);
     $stmt->bind_param("ssssi", $name, $email, $subject, $message, $id);

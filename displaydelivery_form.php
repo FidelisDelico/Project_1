@@ -102,7 +102,7 @@
                             <input type='hidden' name='instructions' value='" . $row["instructions"] . "'>
                             <button class='edit-button' type='submit' name='edit'>Edit</button>
                         </form>
-                        <a href='?delete=" . $row["id"] . "' class='delete-button'>Delete</a>
+                        <button class='delete-button' onclick='deleteRow(this, " . $row["id"] . ")'>Delete</button>
                     </td>
                   </tr>";
         }
@@ -120,6 +120,31 @@
     <footer>
         <p>&copy; 2024 Delico's Restaurant. All rights reserved.</p>
     </footer>
+
+    <script>
+     function deleteRow(button, id) {
+    console.log("Attempting to delete entry with ID:", id);
+    var confirmation = confirm("Are you sure you want to delete this entry?");
+    console.log("Confirmation result:", confirmation);
+    if (confirmation) {
+        var row = button.parentNode.parentNode;
+        row.parentNode.removeChild(row);
+        
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    console.log("Entry deleted successfully");
+                } else {
+                    console.error("Error deleting entry: " + xhr.statusText);
+                }
+            }
+        };
+        xhr.open("GET", "delete_delivery_form.php?delete=" + id, true);
+        xhr.send();
+    }
+}
+    </script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

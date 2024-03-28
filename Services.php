@@ -53,6 +53,7 @@ input[type="submit"]:hover {
 }
 form {
   padding: 90px;
+  border-radius: 5px;
 }
 
 .navbar {

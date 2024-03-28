@@ -5,10 +5,10 @@ if(isset($_POST['id']) && !empty($_POST['id'])) {
     $id = filter_var($_POST['id'], FILTER_SANITIZE_NUMBER_INT);
     
     
-    require_once("dbconnect_contact.php");
+    require_once("dbdelivery_form.php");
 
     
-    $sql = "DELETE FROM contact_form WHERE id = ?";
+    $sql = "DELETE FROM user_info WHERE id = ?";
     
     
     if($stmt = $connect->prepare($sql)) {
